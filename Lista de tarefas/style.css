@@ -1,0 +1,76 @@
+ @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+body {
+  font-family: 'League Gothic', sans-serif;
+  font-size:20px;
+  color: brown;
+  margin: 0 50px;
+  background: rgb(40,40,40);
+  background: linear-gradient(218deg, rgba(40,40,40,1) 25%, rgba(255,0,0,1) 62%, rgba(255,255,255,1) 91%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.app {
+  background-color: #282828;
+  width: 500px;
+  height: 500px;
+  border: 5px solid brown;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  color: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e2eede;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: brown;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid brown;
+  background-color: #e2eede;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
